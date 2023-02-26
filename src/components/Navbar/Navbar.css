@@ -1,0 +1,97 @@
+:root {
+  --nav-btn-border-color: #8899aa;
+  --nav-btn-color: #0e6fff;
+  --nav-text-color: #89a7c3;
+  --nav-text-hover-color: #4d7499;
+  --nav-bg-color: #fafafa;
+}
+
+.nav {
+  height: clamp(4rem, 2rem + 5vw, 8rem);
+  width: 100%;
+  background-color: var(--nav-bg-color);
+}
+
+.nav__content {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.nav__logo {
+  font-family: Sarina, Poppins, system-ui, sans-serif;
+  font-size: clamp(1rem, 4.5vw, 1.85rem);
+  padding: 2rem;
+}
+
+.nav__links {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: clamp(1rem, 5vw, 3.5rem);
+}
+
+.nav__link {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--nav-text-color);
+  letter-spacing: +0.01rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.nav__link:hover {
+  color: var(--nav-text-hover-color);
+}
+
+.nav__button {
+  color: var(--nav-btn-color);
+  font-size: 1.125rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--nav-btn-border-color);
+  border-radius: 0.25rem;
+  background: none;
+  font-weight: 700;
+  letter-spacing: -0.05rem;
+  transition: all 0.3s ease;
+}
+
+.nav__button:hover {
+  background-color: var(--nav-btn-color);
+  color: white;
+  border: 1px solid var(--nav-btn-color);
+}
+
+@media screen and (max-width: 1024px) {
+  .nav__content {
+    width: 80%;
+  }
+
+  .nav__logo {
+    font-size: clamp(1rem, 4.5vw, 1.5rem);
+    padding: 0;
+  }
+
+  .nav__links {
+    gap: clamp(1rem, 5vw, 2.5rem);
+  }
+
+  .nav__link {
+    font-size: 1rem;
+  }
+
+  .nav__button {
+    font-size: 0.875rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav__links {
+    display: none;
+  }
+}
