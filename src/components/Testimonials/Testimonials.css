@@ -1,0 +1,23 @@
+:root {
+  --avatar-size: clamp(3rem, 1rem + 2.5vw, 5rem);
+}
+
+.testimonials {
+  margin-left: 7.5vw;
+  padding-block: 3rem;
+  overflow-x: hidden;
+}
+
+.carousel {
+  padding: 2rem 0;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  transition: transform 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonials {
+    margin-left: 10vw;
+  }
+}
