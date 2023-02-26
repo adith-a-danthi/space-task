@@ -13,7 +13,7 @@
 * {
   font-family: Roboto, system-ui, sans-serif;
   line-height: 110%;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -23,6 +23,11 @@
 .heading-1 {
   font-weight: 700;
   font-size: clamp(1.75rem, 1rem + 2vw, 4rem);
-  line-height: 110%;
   letter-spacing: -0.045em;
+}
+
+.heading-2 {
+  font-weight: 500;
+  font-size: clamp(1.5rem, 1.1479rem + 1.1268vw, 3rem);
+  letter-spacing: -0.03em;
 }

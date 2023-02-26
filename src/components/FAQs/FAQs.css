@@ -33,8 +33,7 @@
   padding-left: clamp(3rem, 1rem + 4.1667vw, 6rem);
 }
 
-.faq__heading {
-  font-size: clamp(1.5rem, 1.1479rem + 1.1268vw, 3rem);
+.faqs .faq__heading {
   font-weight: 600;
   color: var(--faq-dark-green);
   margin-bottom: 2rem;

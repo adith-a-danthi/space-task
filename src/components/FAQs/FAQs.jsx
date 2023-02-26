@@ -12,7 +12,7 @@ export default function FAQs() {
     <section className="faqs">
       <div className="content">
         <div className="tab__container">
-          <h2 className="faq__heading">FAQ Heading</h2>
+          <h2 className="heading-2 faq__heading">FAQ Heading</h2>
 
           <Tabs tabs={[...Array(5)]} />
         </div>

@@ -3,7 +3,7 @@ import './TestimonialItem.css';
 export default function TestimonialItem({ testimonial }) {
   return (
     <div className="testimonial" style={{ backgroundColor: testimonial.color }}>
-      <h2 className="testimonial__title">{testimonial.title}</h2>
+      <h2 className="heading-2 testimonial__title">{testimonial.title}</h2>
 
       <div className="testimonial__author">
         <img

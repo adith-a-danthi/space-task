@@ -1,5 +1,5 @@
 :root {
-  --page-btn-size: clamp(1.5rem, 0.5rem + 1vw, 2rem);
+  --page-btn-size: clamp(1.5rem, 0.5rem + 1.5vw, 2.5rem);
   --page-btn-color-light: #e0e3ed;
   --page-btn-color-dark: #555d75;
 }
@@ -7,12 +7,13 @@
 .page__list {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .page__btn {
   width: var(--page-btn-size);
   height: var(--page-btn-size);
+  font-size: calc(var(--page-btn-size) / 1.75);
   background: none;
   border-radius: 100vh;
   border: 1px solid var(--page-btn-color-light);

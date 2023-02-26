@@ -12,7 +12,7 @@ export default function Hero() {
           />
         </div>
         <div>
-          <h1 className="hero__title">
+          <h1 className="hero__title heading-1">
             Requirements gathering and analysis for references.
           </h1>
           <p className="hero__text">

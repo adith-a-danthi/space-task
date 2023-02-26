@@ -29,6 +29,7 @@
 .accordian__summary > .accordian__icon {
   width: var(--accordian-size);
   height: var(--accordian-size);
+  margin-inline: 0.5rem;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -52,4 +53,15 @@
   font-size: clamp(0.85rem, 0.8239rem + 0.5634vw, 1.385rem);
   line-height: 150%;
   color: var(--accordian--content-color);
+  animation: accordian__content--animation 0.3s ease-in-out both;
+}
+
+/* Animation for accordian content */
+@keyframes accordian__content--animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

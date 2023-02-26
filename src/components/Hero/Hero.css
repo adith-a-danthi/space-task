@@ -1,5 +1,5 @@
 :root {
-  --clamp-8: clamp(4rem, 2rem + 5vw, 8rem);
+  --clamp-8: clamp(3rem, 2rem + 5vw, 8rem);
 }
 
 .hero {
@@ -36,10 +36,6 @@
 
 .hero__title {
   margin-left: 5rem;
-  font-weight: 700;
-  font-size: clamp(1.75rem, 1rem + 2vw, 4rem);
-  line-height: 110%;
-  letter-spacing: -0.045em;
 }
 
 .hero__text {

@@ -21,8 +21,8 @@
 }
 
 .nav__logo {
-  font-family: Sarina, Poppins, system-ui, sans-serif;
-  font-size: clamp(1rem, 4.5vw, 1.85rem);
+  font-family: Sarina, system-ui, sans-serif;
+  font-size: 2rem;
   padding: 2rem;
 }
 
@@ -31,14 +31,13 @@
   display: flex;
   align-items: center;
   justify-content: right;
-  gap: clamp(1rem, 5vw, 3.5rem);
+  gap: clamp(1rem, 3vw, 3.5rem);
 }
 
 .nav__link {
+  color: var(--nav-text-color);
   font-weight: 700;
   font-size: 1.25rem;
-  color: var(--nav-text-color);
-  letter-spacing: +0.01rem;
   text-decoration: none;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -49,20 +48,19 @@
 }
 
 .nav__button {
-  color: var(--nav-btn-color);
-  font-size: 1.125rem;
   padding: 0.5rem 1rem;
+  color: var(--nav-btn-color);
+  font-size: 1.25rem;
+  font-weight: 700;
+  background: none;
   border: 1px solid var(--nav-btn-border-color);
   border-radius: 0.25rem;
-  background: none;
-  font-weight: 700;
-  letter-spacing: -0.05rem;
   transition: all 0.3s ease;
 }
 
 .nav__button:hover {
-  background-color: var(--nav-btn-color);
   color: white;
+  background-color: var(--nav-btn-color);
   border: 1px solid var(--nav-btn-color);
 }
 
@@ -72,12 +70,8 @@
   }
 
   .nav__logo {
-    font-size: clamp(1rem, 4.5vw, 1.5rem);
+    font-size: 1.5rem;
     padding: 0;
-  }
-
-  .nav__links {
-    gap: clamp(1rem, 5vw, 2.5rem);
   }
 
   .nav__link {
@@ -85,7 +79,7 @@
   }
 
   .nav__button {
-    font-size: 0.875rem;
+    font-size: 1rem;
     padding: 0.25rem 0.5rem;
   }
 }
