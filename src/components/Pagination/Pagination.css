@@ -1,0 +1,33 @@
+:root {
+  --page-btn-size: clamp(1.5rem, 0.5rem + 1vw, 2rem);
+  --page-btn-color-light: #e0e3ed;
+  --page-btn-color-dark: #555d75;
+}
+
+.page__list {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.page__btn {
+  width: var(--page-btn-size);
+  height: var(--page-btn-size);
+  background: none;
+  border-radius: 100vh;
+  border: 1px solid var(--page-btn-color-light);
+  color: var(--page-btn-color-dark);
+  font-weight: 400;
+}
+
+.page__btn.active {
+  background-color: var(--base-black);
+  border: 1px solid var(--base-black);
+  color: var(--page-btn-color-light);
+}
+
+.page__btn:hover {
+  background-color: var(--base-black);
+  border: 1px solid var(--base-black);
+  color: var(--page-btn-color-light);
+}
