@@ -31,3 +31,15 @@
   font-size: clamp(1.5rem, 1.1479rem + 1.1268vw, 3rem);
   letter-spacing: -0.03em;
 }
+
+.content {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    width: 80%;
+  }
+}

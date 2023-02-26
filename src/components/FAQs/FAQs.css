@@ -16,8 +16,6 @@
 }
 
 .content {
-  width: 80%;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   gap: clamp(2rem, 2rem + 8vw, 10rem);
@@ -42,7 +40,6 @@
 
 @media screen and (max-width: 768px) {
   .content {
-    width: 80%;
     flex-direction: column;
     gap: 2rem;
   }

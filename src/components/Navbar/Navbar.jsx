@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     <nav className="nav">
-      <div className="nav__content">
+      <div className="content nav__content">
         <div className="nav__logo">Space</div>
 
         {/* Hamburger Menu */}
