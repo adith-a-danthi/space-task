@@ -1,0 +1,55 @@
+:root {
+  --accordian-size: clamp(1rem, 0.8239rem + 0.5634vw, 1.5rem);
+  --accordian-divider-color: #c4c5cf;
+  --accordian--content-color: #515365;
+}
+
+.accordian {
+  padding-block: var(--accordian-size);
+  transition: all 0.3s ease-in-out;
+}
+
+.accordian:not(:last-child) {
+  border-bottom: 1px solid var(--accordian-divider-color);
+}
+
+/* Summary */
+.accordian__summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  list-style: none;
+}
+
+.accordian[open] .accordian__summary {
+  padding-bottom: 1rem;
+}
+
+.accordian__summary > .accordian__icon {
+  width: var(--accordian-size);
+  height: var(--accordian-size);
+  transition: transform 0.3s ease-in-out;
+}
+
+.accordian[open] > .accordian__summary > .accordian__icon {
+  transform: rotate(180deg);
+}
+
+.accordian__summary > .accordian__heading {
+  font-size: var(--accordian-size);
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.accordian__heading,
+.accordian__summary > .accordian__icon * {
+  color: var(--faq-light-green);
+}
+
+/* Content */
+.accordian__content {
+  font-size: clamp(0.85rem, 0.8239rem + 0.5634vw, 1.385rem);
+  line-height: 150%;
+  color: var(--accordian--content-color);
+}
