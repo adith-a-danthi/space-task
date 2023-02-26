@@ -2,7 +2,7 @@
   flex: 1 0 85%;
   height: clamp(17rem, 8rem + 10vw, 25rem);
   width: 85%;
-  padding: 2rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
