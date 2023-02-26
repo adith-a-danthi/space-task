@@ -1,0 +1,36 @@
+:root {
+  --tab-btn-size: clamp(1rem, 0.8239rem + 0.5634vw, 1.5rem);
+  --active-tab-color: #afe5cf;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--faq-dark-green);
+}
+
+.tab__btn {
+  width: 100%;
+  padding: var(--tab-btn-size);
+  font-size: var(--tab-btn-size);
+  font-weight: 600;
+  border-radius: 0.75rem;
+  border: none;
+  text-align: left;
+  background: none;
+  color: white;
+}
+
+.tab__btn:hover {
+  background-color: var(--faq-light-green);
+}
+
+.tab__btn.active {
+  background-color: var(--active-tab-color);
+  color: var(--faq--text-color);
+}
