@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="hero">
       <div className="hero__content">
-        <div className='col_1'>
+        <div className='extra_content'>
           <img
             className="hero__image portrait_image"
             src="https://images.unsplash.com/photo-1593314731059-d6eb89748e65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
