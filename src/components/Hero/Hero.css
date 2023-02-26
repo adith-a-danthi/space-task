@@ -1,5 +1,6 @@
 :root {
-  --clamp-8: clamp(3rem, 2rem + 5vw, 8rem);
+  --clamp-8: clamp(3rem, 1rem + 5vw, 8rem);
+  --clamp-5: clamp(2rem, 1rem + 3vw, 5rem);
 }
 
 .hero {
@@ -8,10 +9,10 @@
 }
 
 .hero__content {
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-  gap: var(--clamp-8);
+  display: flex;
+  gap: 0;
 }
+
 
 .hero .bg {
   height: 30%;
@@ -29,15 +30,20 @@
 }
 
 .hero__content .extra_content {
-  padding: 2rem;
+  padding: 2rem 0;
+  flex: 1;
+}
+
+.main__content {
+  flex: 2;
 }
 
 .hero__title {
-  margin-left: 5rem;
+  margin-left: var(--clamp-5);
 }
 
 .hero__text {
-  margin: 4rem 0 6rem 5rem;
+  margin: 4rem 0 6rem var(--clamp-5);
   font-size: clamp(1.25rem, 1rem + 0.5vw, 1.75rem);
   line-height: 120%;
   letter-spacing: -0.01em;
@@ -50,7 +56,7 @@
   object-fit: cover;
 }
 
-.landscape {
+.landscape_image {
   aspect-ratio: 16/9;
 }
 
