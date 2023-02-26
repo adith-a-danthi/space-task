@@ -9,7 +9,7 @@ const navLinks = [
 
 export default function Navbar() {
   return (
-    <nav class="nav">
+    <nav className="nav">
       <div className="nav__content">
         <div className="nav__logo">Space</div>
         <div className="nav__links">
