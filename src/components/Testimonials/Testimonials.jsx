@@ -2,47 +2,38 @@ import { useEffect, useRef, useState } from 'react';
 import { TestimonialItem, Pagination } from '../../components';
 import './Testimonials.css';
 
-const testimonials = [
-  {
-    id: 1,
-    title:
-      'I feel so much less stressed ❤️ as I now know we’re doing everything by the book.',
-    name: 'Andry Ford',
-    role: 'CEO at Whatever',
-    avatar: 'https://i.pravatar.cc/300',
-    color: '#fff4d4',
-  },
-  {
-    id: 2,
-    title:
-      "“Every single person comes away and says - wow that's a really slick experience, that was so easy to use.”",
-    name: 'Andry Ford',
-    role: 'CEO at Whatever',
-    avatar: 'https://i.pravatar.cc/400',
-    color: '#ffab74',
-  },
-  {
-    id: 3,
-    title:
-      "“Every single person comes away and says - wow that's a really slick experience, that was so easy to use.”",
-    name: 'Andry Ford',
-    role: 'CEO at Whatever',
-    avatar: 'https://i.pravatar.cc/200',
-    color: '#fabed7',
-  },
-];
-
 export default function Testimonials() {
   const component = useRef(null);
   const [offsetWidth, setOffsetWidth] = useState(0);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [testimonials, setTestimonials] = useState([]);
+
+  const getTestimonials = async () => {
+    fetch(
+      'https://naseers819.wixsite.com/website-5/_functions/webpageTestimonials'
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        setTestimonials(data);
+      })
+      .catch((err) => console.log(err));
+  };
+
+  const getTestimonialWidth = () => {
+    const testimonialItemWidth =
+      component.current?.children[0]?.offsetWidth ?? 0;
+    const width = (testimonialItemWidth + 32) * activeIndex;
+    setOffsetWidth(width);
+  };
+
+  useEffect(() => {
+    getTestimonials();
+  }, []);
 
   // Update offsetWidth when activeIndex changes to move the carousel
   useEffect(() => {
-    const testimonialItem = component.current.children[0];
-    const width = (testimonialItem.offsetWidth + 32) * activeIndex;
-    setOffsetWidth(width);
-  }, [component.current, activeIndex]);
+    getTestimonialWidth();
+  }, [testimonials, activeIndex]);
 
   // Update active index of the carousel
   const increaseIndex = () => {

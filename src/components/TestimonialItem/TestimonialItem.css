@@ -10,6 +10,15 @@
   flex-wrap: nowrap;
   gap: 1rem;
   border-radius: 0.75rem;
+  background-color: #fff4d4;
+}
+
+.testimonial:nth-child(2) {
+  background-color: #ffab74;
+}
+
+.testimonial:nth-child(3) {
+  background-color: #fabed7;
 }
 
 .testimonial__title {
